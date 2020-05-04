@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_year_in_pixels"
+            android:icon="@drawable/ic_pixels"
+            android:title="@string/action_pixels"
+            android:iconTint="@color/colorBlack" />
+        <item
+            android:id="@+id/nav_graphs"
+            android:icon="@drawable/ic_chart"
+            android:title="@string/action_chart"
+            android:iconTint="@color/colorBlack" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_navigate_before"
+            android:title="Settings"
+            android:iconTint="@color/colorBlack" />
+        <item
+            android:id="@+id/go_home"
+            android:icon="@drawable/ic_home"
+            android:title="Go home"
+            android:iconTint="@color/colorBlack" />
+    </group>
+
+
+</menu>

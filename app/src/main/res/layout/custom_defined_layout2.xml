@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF3855"
+        android:alpha="0.5"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:minWidth="10dp"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:text="@string/string_dummy_date_text"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.2"
+        android:background="#555" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:drawableRight="@drawable/arrow1"
+        android:drawableEnd="@drawable/arrow1"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:text="@string/string_dummy_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:typeface="serif"
+
+        android:layout_below="@+id/text3"
+        android:layout_toRightOf="@+id/completedClick"
+        android:layout_toEndOf="@+id/completedClick" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:gravity="end"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:textColor="#FF9980"
+        android:text="@string/string_dummy_time_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:typeface="serif"
+
+        android:layout_below="@+id/text4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/completedClick"
+        android:layout_below="@+id/text3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/btn_check_on_focused_holo_dark" />
+
+
+</RelativeLayout>

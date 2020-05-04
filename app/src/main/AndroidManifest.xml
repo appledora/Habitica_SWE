@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maseno.franklinesable.lifereminder">
+
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <application
+        android:name="com.tgc.appledora.habitica.sleepCycle.app.CustomApp"
+        android:allowBackup="true"
+        android:icon="@drawable/health"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.tgc.appledora.habitica.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.tgc.appledora.habitica.preference_activity"
+            android:label="Life Reminder Settings"
+            android:parentActivityName="com.tgc.appledora.habitica.MainActivity" />
+        <activity
+            android:name="com.tgc.appledora.habitica.reminder_view"
+            android:label="@string/title_activity_reminder_view"
+            android:parentActivityName="com.tgc.appledora.habitica.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tgc.appledora.habitica.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tgc.appledora.habitica.reminder_edit"
+            android:label="@string/title_activity_reminder_edit"
+            android:parentActivityName="com.tgc.appledora.habitica.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tgc.appledora.habitica.MainActivity" />
+        </activity>
+
+        <receiver
+            android:name="com.tgc.appledora.habitica.boot_Receiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tgc.appledora.habitica.AlarmReceiver" />
+
+        <service android:name="com.tgc.appledora.habitica.reminder_Service" />
+
+        <activity
+            android:name="com.tgc.appledora.habitica.favourite_reminders"
+            android:label="@string/title_activity_favourite_reminders"
+            android:parentActivityName="com.tgc.appledora.habitica.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tgc.appledora.habitica.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.tgc.appledora.habitica.streakCounter.ui.task_list.TaskListActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name="com.tgc.appledora.habitica.streakCounter.ui.detail_task.TaskDetailActivity"
+            android:label="@string/title_item_detail"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.tgc.appledora.habitica.streakCounter.ui.task_list.TaskListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tgc.appledora.habitica.streakCounter.ui.task_list.TaskListActivity" />
+        </activity>
+
+        <activity android:name="com.tgc.appledora.habitica.streakCounter.ui.configure_task.ConfigureTaskActivity" />
+        <activity
+            android:name="com.tgc.appledora.habitica.sleepCycle.app.base.SleepCycleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SleepCycleAlarm"
+            android:supportsRtl="true"></activity>
+
+        <activity
+            android:name="com.tgc.appledora.habitica.sleepCycle.schedule.AlarmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SleepCycleAlarm" />
+        <activity
+            android:name="com.tgc.appledora.habitica.moodChart.MoodActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.tgc.appledora.habitica.moodChart.TodayActivity"
+            android:parentActivityName="com.tgc.appledora.habitica.moodChart.MoodActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tgc.appledora.habitica.moodChart.MoodActivity" />
+        </activity>
+        <!-- Show notification at right time -->
+        <receiver android:name="com.tgc.appledora.habitica.streakCounter.util.NotificationPublisher" />
+        <!-- Re-schedule all the alarm to trigger the notification after restart -->
+        <receiver
+            android:name="com.tgc.appledora.habitica.streakCounter.util.NotificationBootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tgc.appledora.habitica.AlarmReceiver" />
+
+        <service
+            android:name="com.tgc.appledora.habitica.reminderUpdate_Service"
+            android:exported="false" />
+        <service android:name="com.tgc.appledora.habitica.sleepCycle.schedule.AlarmService" />
+
+        <service
+            android:name="com.tgc.appledora.habitica.AsynchronousBackgroundDbService"
+            android:exported="false"></service>
+    </application>
+
+
+</manifest>

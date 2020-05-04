@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_favorite_24dp"
+            android:title="@string/nav_favourites" />
+        <item
+            android:icon="@drawable/ic_clear_24dp"
+            android:title="@string/nav_erase" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/nav_tools" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:iconTint="#7FD8BE"
+            android:title="@string/nav_share" />
+        <item
+            android:id="@+id/nav_streak"
+            android:icon="@drawable/ic_add_alarm_black"
+            android:iconTint="#7FD8BE"
+            android:title="Streak Check" />
+        <item
+            android:id="@+id/nav_mood"
+            android:icon="@drawable/completed_icon"
+            android:title="Mood Chart" />
+
+        <item
+            android:id="@+id/nav_sleep"
+            android:icon="@drawable/ic_empty_alarms_list"
+            android:title="Sleep Cycle" />
+
+    </group>
+
+
+</menu>

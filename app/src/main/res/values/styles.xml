@@ -1,0 +1,160 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/default_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/default_color</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+
+    <style name="DarkTheme" parent="Base.Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="titleTextColor">@color/colorAccent</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/default_color</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBarSettings">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/colorBlack</item>
+
+    </style>
+
+    <style name="DarkThemeSettings" parent="Base.Theme.AppCompat">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>'
+        <item name="titleTextColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/colorWhite</item>
+
+
+    </style>
+
+    <style name="MaterialDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/default_color</item>
+
+        <item name="colorAccent">#8FD400</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+
+    <!-- TextAppearance for Labels -->
+    <style name="HeadingTextAppearance" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Labels TextAppearance with AccentColor Tint-->
+    <style name="AccentHeadingTextAppearance" parent="HeadingTextAppearance">
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+    <!-- TextAppearance for Toolbar-->
+    <style name="toolbarTitleTextAppearance" parent="TextAppearance.MaterialComponents.Headline6" />
+
+    <!-- Styling for AlertDialog-->
+    <style name="AlertDialogLight" parent="Theme.MaterialComponents.Light.Dialog.Alert"></style>
+    <!-- Styling applied to EditText-->
+    <style name="AccentEditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAppearance">@style/AccentHeadingTextAppearance</item>
+        <item name="android:textColor">@color/Tuscan</item>
+        <item name="android:textColorHint">@color/rajah</item>
+        <item name="fontFamily">@font/alba</item>
+
+    </style>
+
+    <style name="Theme.SleepCycleAlarm" parent="PreferenceFixTheme.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+
+    <style name="Theme.SleepCycleAlarm.InfoCard">
+        <item name="cardCornerRadius">@dimen/cornerRadiusSize</item>
+        <item name="cardElevation">@dimen/elevationSize</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="contentPadding">@dimen/contentPaddingInfoBoard</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="cardBackgroundColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.SleepCycleAlarm.FloatingActionButton" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_width">@dimen/fabWidth</item>
+        <item name="android:layout_height">@dimen/fabHeight</item>
+        <item name="android:background">@drawable/button_fab_extended</item>
+        <item name="android:drawableStart">@drawable/ic_add</item>
+        <item name="android:textColor">@color/colorIconsActiveFocusedNegative</item>
+    </style>
+
+    <style name="Theme.SleepCycleAlarm.Dialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="background">@color/colorDialogBackground</item>
+        <item name="buttonBarStyle">@style/MyButtonBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyButtonBar">
+        <item name="android:background">@color/colorDialogBackground</item>
+    </style>
+
+    <style name="MoodLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/spacing</item>
+        <item name="android:textSize">@dimen/mood_label_font_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MoodLabelSettings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MoodLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/half_spacing</item>
+        <item name="android:layout_marginEnd">@dimen/half_spacing</item>
+        <item name="android:background">@drawable/color_selector</item>
+        <item name="android:padding">@dimen/half_spacing</item>
+    </style>
+
+    <style name="MoodLayoutSettings">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_marginStart">@dimen/spacing</item>
+        <item name="android:layout_marginEnd">@dimen/spacing</item>
+    </style>
+
+</resources>

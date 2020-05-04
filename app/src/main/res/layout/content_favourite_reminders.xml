@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tgc.appledora.habitica.favourite_reminders"
+    tools:showIn="@layout/activity_favourite_reminders">
+
+
+    <ListView
+        android:id="@+id/fvourite_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.6"
+        android:drawableLeft="@drawable/emo_im_foot_in_mouth"
+        android:drawableStart="@drawable/emo_im_foot_in_mouth"
+        android:text="Oops! You have no favourites..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView233"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_separate_circle_24dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView233"
+        android:layout_alignLeft="@+id/imageC"
+        android:layout_alignStart="@+id/imageC"
+        android:alpha="0"
+        android:onClick="contextClickMe"
+        android:src="@drawable/info_dialog"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageView233"
+        android:layout_toStartOf="@+id/imageView233"
+        android:alpha="0"
+        android:onClick="contextClickMe"
+        android:src="@drawable/edit_dialog"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageD"
+        android:layout_toEndOf="@+id/imageView233"
+        android:layout_toRightOf="@+id/imageView233"
+        android:alpha="0"
+        android:onClick="contextClickMe"
+        android:src="@drawable/delete_dialog"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView233"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"
+        android:onClick="contextClickMe"
+        android:src="@drawable/message_dialog"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/container">
+
+    <FrameLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/frameHolder"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/text_margin" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/nav_next"
+        android:drawableRight="@drawable/nav_next"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/string_dummy_text"
+        style="?android:attr/textAppearanceLarge"
+        android:textSize="23sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/frameHolder"
+        android:layout_toEndOf="@+id/frameHolder"
+        android:paddingTop="@dimen/text_margin"
+        android:paddingBottom="@dimen/text_margin" />
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_gravity="end"
+        android:alpha="0.5"
+        android:text="09/15/22"
+        android:drawablePadding="5dp"
+        android:layout_alignBaseline="@+id/timeField"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:drawableRight="@drawable/flag_normal"
+        android:layout_alignBottom="@+id/timeField"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/text_margin" />
+
+    <TextView
+        android:id="@+id/timeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:alpha="0.5"
+        android:textSize="12sp"
+        android:text="@string/string_dummy_time_text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:drawableStart="@drawable/ic_alarm_24dp1"
+        android:drawableLeft="@drawable/ic_alarm_24dp1"
+        android:drawablePadding="5dp"
+        android:layout_alignBottom="@+id/frameHolder"
+        android:layout_toRightOf="@+id/frameHolder"
+        android:layout_toEndOf="@+id/frameHolder"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
+
+
+
+
+

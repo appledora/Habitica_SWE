@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tgc.appledora.habitica.reminder_view"
+    tools:showIn="@layout/activity_reminder_view">
+
+    <TextView
+        android:id="@+id/title_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/rem_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/body_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:text="@string/string_dummy_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:alpha="0.7"
+        android:textSize="19sp"
+        android:typeface="sans" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.2"
+        android:background="#555" />
+
+    <TextView
+        android:id="@+id/scheduledDateView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="@string/string_dummy_date_text"
+        android:textColor="#2F4F4F"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/createDateView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="#696969"
+        android:layout_marginTop="10dp"
+        android:text="@string/string_dummy_date_text1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="17sp" />
+
+</LinearLayout>

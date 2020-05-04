@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing"
+        android:layout_marginTop="@dimen/spacing"
+        android:layout_marginEnd="@dimen/spacing">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/year_bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/year_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/year_bar_chart"
+            tools:text="This is year a test text" />
+
+        <!-- Graph mood 1 -->
+        <View
+            android:id="@+id/separation_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/year_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_1_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line1" />
+
+        <TextView
+            android:id="@+id/mood_1_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_1_line_chart"
+            tools:text="This is 1 test text" />
+
+        <!-- Graph mood 2 -->
+        <View
+            android:id="@+id/separation_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_1_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_2_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line2" />
+
+        <TextView
+            android:id="@+id/mood_2_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_2_line_chart"
+            tools:text="This is 2 test text" />
+
+        <!-- Graph mood 3 -->
+        <View
+            android:id="@+id/separation_line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_2_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_3_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line3" />
+
+        <TextView
+            android:id="@+id/mood_3_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_3_line_chart"
+            tools:text="This is 3 test text" />
+
+        <!-- Graph mood 4 -->
+        <View
+            android:id="@+id/separation_line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_3_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_4_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line4" />
+
+        <TextView
+            android:id="@+id/mood_4_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_4_line_chart"
+            tools:text="This is 4 test text" />
+
+        <!-- Graph mood 5 -->
+        <View
+            android:id="@+id/separation_line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_4_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_5_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line5" />
+
+        <TextView
+            android:id="@+id/mood_5_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_5_line_chart"
+            tools:text="This is 5 test text" />
+
+        <!-- Graph mood 6 -->
+        <View
+            android:id="@+id/separation_line6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_5_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_6_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line6" />
+
+        <TextView
+            android:id="@+id/mood_6_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_6_line_chart"
+            tools:text="This is 6 test text" />
+
+        <!-- Graph mood 7 -->
+        <View
+            android:id="@+id/separation_line7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_6_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_7_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line7" />
+
+        <TextView
+            android:id="@+id/mood_7_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_7_line_chart"
+            tools:text="This is 7 test text" />
+
+        <!-- Graph mood 8 -->
+        <View
+            android:id="@+id/separation_line8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_7_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_8_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line8" />
+
+        <TextView
+            android:id="@+id/mood_8_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_8_line_chart"
+            tools:text="This is 8 test text" />
+
+        <!-- Graph mood 9 -->
+        <View
+            android:id="@+id/separation_line9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_8_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_9_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line9" />
+
+        <TextView
+            android:id="@+id/mood_9_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_9_line_chart"
+            tools:text="This is 9 test text" />
+
+        <!-- Graph mood 10 -->
+        <View
+            android:id="@+id/separation_line10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_9_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_10_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line10" />
+
+        <TextView
+            android:id="@+id/mood_10_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_10_line_chart"
+            tools:text="This is 10 test text" />
+
+        <!-- Graph mood 11 -->
+        <View
+            android:id="@+id/separation_line11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_10_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_11_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line11" />
+
+        <TextView
+            android:id="@+id/mood_11_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_11_line_chart"
+            tools:text="This is 11 test text" />
+
+        <!-- Graph mood 12 -->
+        <View
+            android:id="@+id/separation_line12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/colorLightGray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_11_conclusion_text_view" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/mood_12_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_line12" />
+
+        <TextView
+            android:id="@+id/mood_12_conclusion_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/conclusion_font_size"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_12_line_chart"
+            tools:text="This is 12 test text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing"
+            android:layout_marginTop="@dimen/spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_12_conclusion_text_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

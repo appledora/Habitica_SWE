@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tgc.appledora.habitica.reminder_edit"
+    tools:showIn="@layout/activity_reminder_edit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/description_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/description_Edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/rem_desc"
+                    android:minLines="4"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:typeface="serif" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/details_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description_Layout"
+                android:baselineAligned="true">
+
+                <EditText
+                    android:id="@+id/body_Edit"
+                    style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_Details"
+                    android:minLines="2"
+                    android:scrollbars="vertical"
+                    android:textSize="20sp"
+                    android:typeface="serif" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/purple_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_Layout"
+                android:layout_alignBaseline="@+id/orange_button"
+                android:layout_toStartOf="@+id/green_button"
+                android:layout_toLeftOf="@+id/green_button"
+                android:contentDescription="@string/purple"
+                android:onClick="setContentsColor"
+                android:src="@drawable/ic_color_button"
+                android:tint="#6B3FA0" />
+
+            <ImageView
+                android:id="@+id/green_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_Layout"
+                android:layout_alignBaseline="@+id/orange_button"
+                android:layout_toStartOf="@+id/blue_button"
+                android:layout_toLeftOf="@+id/blue_button"
+                android:contentDescription="@string/green"
+                android:onClick="setContentsColor"
+                android:src="@drawable/ic_color_button"
+                android:tint="#84DE02" />
+
+            <ImageView
+                android:id="@+id/blue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_Layout"
+                android:layout_alignBaseline="@+id/orange_button"
+                android:layout_toStartOf="@+id/yellow_button"
+                android:layout_toLeftOf="@+id/yellow_button"
+                android:contentDescription="@string/blue"
+                android:onClick="setContentsColor"
+                android:src="@drawable/ic_color_button"
+                android:tint="#009DC4" />
+
+            <ImageView
+                android:id="@+id/yellow_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_Layout"
+                android:layout_alignBaseline="@+id/orange_button"
+                android:layout_toStartOf="@+id/brown_button"
+                android:layout_toLeftOf="@+id/brown_button"
+                android:contentDescription="@string/yellow"
+                android:onClick="setContentsColor"
+                android:src="@drawable/ic_color_button"
+                android:tint="#FFAA1D" />
+
+            <ImageView
+                android:id="@+id/brown_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_Layout"
+                android:layout_alignBaseline="@+id/orange_button"
+                android:layout_toStartOf="@+id/red_button"
+                android:layout_toLeftOf="@+id/red_button"
+                android:contentDescription="@string/brown"
+                android:onClick="setContentsColor"
+                android:src="@drawable/ic_color_button"
+                android:tint="#87421F" />
+
+
+            <ImageView
+                android:id="@+id/red_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_Layout"
+                android:layout_alignBaseline="@+id/orange_button"
+                android:layout_toStartOf="@+id/orange_button"
+                android:layout_toLeftOf="@+id/orange_button"
+                android:contentDescription="@string/red"
+                android:onClick="setContentsColor"
+                android:src="@drawable/ic_color_button"
+                android:tint="#FD0E35" />
+
+            <ImageView
+                android:id="@+id/orange_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_Layout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/orange"
+                android:onClick="setContentsColor"
+                android:src="@drawable/ic_color_button"
+                android:tint="#FF6037" />
+
+            <TextView
+                android:id="@+id/setDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/purple_button"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:text="@string/set_dateTime"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/otherOpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/red_button"
+                android:layout_alignBaseline="@+id/setDateTime"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:text="@string/extra_opt"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/date_Button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setDateTime"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:drawableStart="@drawable/date_span_48px"
+                android:drawableLeft="@drawable/date_span_48px"
+                android:drawablePadding="5dp"
+                android:onClick="action_SetDateTime"
+                android:scrollbars="vertical"
+                android:text="@string/rem_date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/time_Button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_Button"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="64dp"
+                android:drawableStart="@drawable/time_span_48px"
+                android:drawableLeft="@drawable/time_span_48px"
+                android:drawablePadding="5dp"
+                android:onClick="action_SetDateTime"
+                android:text="@string/rem_time"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/priorityHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/otherOpt"
+                android:layout_alignBaseline="@+id/date_Button"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginRight="34dp"
+                android:drawableStart="@drawable/flag_normal"
+                android:drawableLeft="@drawable/flag_normal"
+                android:drawablePadding="5dp"
+                android:text="@string/set_priority"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/prioritySpinner"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priorityHeader"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="220dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:alpha="0.7"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textRepeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prioritySpinner"
+                android:layout_alignBaseline="@+id/time_Button"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="46dp"
+                android:drawableStart="@drawable/recurring_appointment_filled_50px"
+                android:drawableLeft="@drawable/recurring_appointment_filled_50px"
+                android:drawablePadding="5dp"
+                android:text="@string/rem_repeat"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/chooseRepeatMode"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRepeat"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="82dp"
+                android:layout_marginRight="82dp"
+                android:alpha="0.7"
+                android:drawableEnd="@drawable/nav_next"
+                android:drawableRight="@drawable/nav_next"
+                android:drawablePadding="15dp"
+                android:onClick="setRepeatMode"
+                android:text="@string/default_RepeatTxt"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/exp_img"
+        android:visibility="invisible" />
+
+
+</FrameLayout>

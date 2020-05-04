@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/action_share"
+        android:id="@+id/share_ctx2" />
+    <item
+        android:title="@string/action_edit"
+        android:id="@+id/edit_ctx2" />
+    <item
+        android:title="Favourites"
+        android:id="@+id/fav_ctx2" />
+
+</menu>

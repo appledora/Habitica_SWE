@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tgc.appledora.habitica.sleepCycle.tabs.addalarm.wakeupat.WakeUpAtSetTimeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TimePicker
+        android:id="@+id/dateTimeSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numbersBackgroundColor="@color/colorDialogBackground"
+        android:background="@color/colorDialogBackground"
+        android:headerBackground="@color/colorAccent"
+        android:animateLayoutChanges="true" />
+
+</com.tgc.appledora.habitica.sleepCycle.tabs.addalarm.wakeupat.WakeUpAtSetTimeView>

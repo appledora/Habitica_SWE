@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wakeUpAtRoot"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparentWhite"
+    android:padding="@dimen/paddingLayout">
+
+    <TextView
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/textBody1"
+        android:id="@+id/tv_fragment_wakeupat_action_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wakeupat_view_description" />
+
+    <TextView
+        android:id="@+id/tv_wakeupat_list_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textCaption"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginTop="@dimen/marginItemsInSectionSmall"
+        android:text="@string/tap_to_set_alarm" />
+
+    <com.tgc.appledora.habitica.sleepCycle.tabs.ui.EmptyStateRecyclerView
+        android:id="@+id/rv_wakeupat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/i_wakeupat_empty_state"
+        layout="@layout/item_empty_state" />
+
+</LinearLayout>

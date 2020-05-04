@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparentWhite"
+    android:padding="@dimen/paddingLayout"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_alarms_list_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textCaption"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginTop="@dimen/marginItemsInSectionSmall"
+        android:text="@string/tap_to_edit_press_and_hold_to_delete" />
+
+    <com.tgc.appledora.habitica.sleepCycle.tabs.ui.EmptyStateRecyclerView
+        android:id="@+id/rv_alarms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/i_alarms_empty_state"
+        layout="@layout/item_empty_state" />
+
+</LinearLayout>

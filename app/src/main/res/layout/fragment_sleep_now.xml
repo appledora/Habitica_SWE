@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingLayout"
+    android:layout_width="match_parent"
+    android:background="@color/colorTransparentWhite"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        style="@style/Theme.SleepCycleAlarm.InfoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/sleep_now_card_info_title"
+                android:textColor="@color/colorTextPrimaryNegative"
+                android:textSize="@dimen/textBody1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep_now_card_info_summary"
+                android:textColor="@color/colorTextSecondaryNegative"
+                android:textSize="@dimen/textBody2" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textCaption"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginTop="@dimen/marginItemsInSectionSmall"
+        android:text="@string/tap_to_set_alarm" />
+
+    <com.tgc.appledora.habitica.sleepCycle.tabs.ui.EmptyStateRecyclerView
+        android:id="@+id/rv_sleepnow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/item_empty_state" />
+
+</LinearLayout>

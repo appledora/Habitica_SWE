@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/current_year_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/current_year_text_view"
+            style="@style/MoodLabelSettings"
+            android:layout_width="wrap_content"
+            android:text="2018"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/previous_year"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="@dimen/spacing"
+            android:background="@drawable/color_selector"
+            android:padding="@dimen/half_spacing"
+            app:layout_constraintBottom_toBottomOf="@id/current_year_text_view"
+            app:layout_constraintEnd_toStartOf="@id/current_year_text_view"
+            app:layout_constraintTop_toTopOf="@id/current_year_text_view"
+            app:srcCompat="@drawable/ic_navigate_before" />
+
+        <ImageView
+            android:id="@+id/next_year"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="@dimen/spacing"
+            android:background="@drawable/color_selector"
+            android:padding="@dimen/half_spacing"
+            app:layout_constraintBottom_toBottomOf="@id/current_year_text_view"
+            app:layout_constraintStart_toEndOf="@id/current_year_text_view"
+            app:layout_constraintTop_toTopOf="@id/current_year_text_view"
+            app:srcCompat="@drawable/ic_navigate_next" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <GridView
+        android:id="@+id/moods_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="13"
+        android:padding="1dp"
+        android:scrollbars="none"
+        android:verticalSpacing="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_year_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

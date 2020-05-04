@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tgc.appledora.habitica.RegularReminder">
+
+    <TextView
+        android:id="@+id/android_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.6"
+        android:drawableLeft="@drawable/emo_im_foot_in_mouth"
+        android:drawableStart="@drawable/emo_im_foot_in_mouth"
+        android:drawablePadding="10dp"
+        android:text="Oops! no scheduled reminders..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list" />
+
+</RelativeLayout>

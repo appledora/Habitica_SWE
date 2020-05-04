@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout1"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginEnd="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_1_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_1_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_1_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_1"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_1_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_1_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_1_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_1_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_1_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_1_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout2"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginEnd="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/layout1">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_2_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_2_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_2_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_2"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_2_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_2_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_2_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_2_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_2_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_2_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout3"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginEnd="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/layout2">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_3_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_3_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_3_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_3"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_3_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_3_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_3_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_3_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_3_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_3_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout4"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginEnd="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/layout3">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_4_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_4_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_4_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_4"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_4_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_4_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_4_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_4_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_4_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_4_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout5"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginEnd="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/layout4">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_5_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_5_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_5_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_5"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_5_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_5_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_5_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_5_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_5_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_5_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/MoodLayoutSettings"
+            android:layout_marginEnd="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/layout5">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_6_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_6_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_6_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_6"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_6_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_6_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_6_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_6_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_6_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_6_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout7"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginStart="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_7_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_7_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_7_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_7"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_7_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_7_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_7_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_7_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_7_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_7_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout8"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginStart="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout7">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_8_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_8_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_8_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_8"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_8_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_8_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_8_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_8_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_8_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_8_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout9"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginStart="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout8">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_9_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_9_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_9_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_9"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_9_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_9_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_9_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_9_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_9_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_9_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout10"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginStart="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout9">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_10_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_10_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_10_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_10"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_10_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_10_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_10_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_10_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_10_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_10_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout11"
+            style="@style/MoodLayoutSettings"
+            android:layout_marginStart="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout10">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_11_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_11_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_11_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_11"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_11_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_11_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_11_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_11_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_11_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_11_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/MoodLayoutSettings"
+            android:layout_marginStart="@dimen/half_spacing"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout11">
+
+            <LinearLayout
+                android:id="@+id/settings_mood_12_label_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing"
+                android:layout_marginEnd="@dimen/spacing"
+                android:background="@drawable/color_selector"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settings_mood_12_color_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/settings_mood_12_label"
+                    style="@style/MoodLabelSettings"
+                    android:text="@string/label_mood_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_hint_mood_12"
+                    android:textColor="#80000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/settings_mood_12_color_view"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/color_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/settings_mood_12_color"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/square_box"
+                app:layout_constraintBottom_toBottomOf="@id/settings_mood_12_color_view"
+                app:layout_constraintEnd_toEndOf="@id/settings_mood_12_color_view"
+                app:layout_constraintTop_toTopOf="@id/settings_mood_12_color_view"
+                app:layout_constraintStart_toStartOf="@id/settings_mood_12_color_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

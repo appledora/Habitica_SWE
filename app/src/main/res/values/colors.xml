@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#DE000000</color>
+    <color name="colorPrimaryDark">#E6B9A1</color>
+    <color name="colorAccent">#100007</color>
+    <color name="colorAccentTransparent">#E6B9A1</color>
+    <color name="colorBackground">#ffff</color>
+    <color name="purple_button">#6B3FA0</color>
+    <color name="green_button">#84DE02</color>
+    <color name="blue_button">#009DC4</color>
+    <color name="yellow_button">#FFAA1D</color>
+    <color name="brown_button">#87421F</color>
+    <color name="red_button">#FD0E35</color>
+    <color name="orange_button">#FF6037</color>
+    <color name="default_color">#505050</color>
+    <color name="colorDialogBackground">@color/colorPrimary</color>
+    <color name="colorSecondary">#FFFFFF</color>
+    <!-- 100, 87, 54 etc.. - OPACITY IN PERCENTAGE -->
+    <color name="colorBlack87">#DE000000</color>
+    <color name="colorBlack54">#8A000000</color>
+    <color name="colorBlack12">#1F000000</color>
+
+    <!-- 100, 87, 54 etc.. - OPACITY IN PERCENTAGE -->
+    <color name="colorWhite100">#FFFFFF</color>
+    <color name="colorWhite70">#B3FFFFFF</color>
+
+    <color name="colorTextPrimary">@color/colorBlack87</color>
+    <color name="colorTextSecondary">@color/colorBlack54</color>
+
+    <color name="colorTextPrimaryNegative">@color/colorWhite100</color>
+    <color name="colorTextSecondaryNegative">@color/colorWhite70</color>
+
+    <color name="colorAccentLighter">#82b1ff</color>
+
+    <color name="colorIconsInList">@color/colorTextPrimary</color>
+    <color name="colorBackgroundForIconsInList">@color/colorBlack12</color>
+
+    <color name="colorIconsActiveFocusedNegative">#DEFFFFFF</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorTransparentWhite">#00FFFFFF</color>
+    <color name="colorTranslucentBlack">#20000000</color>
+    <color name="colorGray">#FF666666</color>
+    <color name="colorLightGray">#FF999999</color>
+    <color name="mood_color_1">#FFFF0000</color>
+    <color name="mood_color_2">#FFFF20A0</color>
+    <color name="mood_color_3">#FFBA0BB4</color>
+    <color name="mood_color_4">#FF00FF00</color>
+    <color name="mood_color_5">#FF088AF0</color>
+    <color name="mood_color_6">#FFAEA031</color>
+    <color name="mood_color_7">#FF804DA0</color>
+    <color name="mood_color_8">#FF826253</color>
+    <color name="mood_color_9">#FFB0B0B0</color>
+    <color name="mood_color_10">#FFFFE949</color>
+    <color name="mood_color_11">#FFFF8300</color>
+    <color name="mood_color_12">#FF212121</color>
+
+    <color name="Tuscan">#4DAA57</color>
+    <color name="rajah">#9EB3C2</color>
+    <color name="sienna">#E9967A</color>
+    <color name="test">#5AD701</color>
+
+</resources>
